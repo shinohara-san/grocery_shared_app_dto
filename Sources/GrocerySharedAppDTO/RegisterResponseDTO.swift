@@ -7,9 +7,9 @@
 
 import Foundation
 
-struct RegisterResponseDTO: Codable {
-    let error: Bool
-    var reason: String? = nil
+public struct RegisterResponseDTO: Codable {
+    public let error: Bool
+    public var reason: String? = nil
 
     public init(error: Bool, reason: String? = nil) { // init needs to be public for SPM
         self.error = error
